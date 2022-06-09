@@ -12,11 +12,12 @@ import { SectionDescription } from "components/misc/Typography.js";
 import defaultCardImage from "images/shield-icon.svg";
 
 import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
+import HappyCustomer from "images/happyCustomerr.png";
 import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
 import LanguageIConImage from "images/languageSup.png";
 import SimpleIconImage from "images/simple-icon.svg";
+import ProfitIconImage from "images/profitIcon.png";
 
 const Container = tw.div`relative bg-primary-900 -mx-8 px-8 text-gray-100`;
 
@@ -71,12 +72,17 @@ export default ({
 
   const defaultCards = [
     {
-      imageSrc: SimpleIconImage,
+      imageSrc: ProfitIconImage,
       title: "Karlılığını Arttır",
       description:
         "Kampanya özelliğini kullanarak müşterilerinizi satmak istediğiniz ürünlere yönlendirin.",
     },
-    // { imageSrc: CustomizeIconImage, title: "Customizable" },
+    {
+      imageSrc: HappyCustomer,
+      title: "Mutlu Müşteriler",
+      description:
+        "Müşterileriniz ürünlerinizi hazırlanmadan önce görerek daha kolay seçim yapar.",
+    },
     {
       imageSrc: LanguageIConImage,
       title: "Çoklu dil desteği",
