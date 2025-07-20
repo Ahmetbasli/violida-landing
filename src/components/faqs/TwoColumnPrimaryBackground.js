@@ -3,11 +3,16 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled, { css } from "styled-components/macro"; //eslint-disable-line
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
-import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
+import {
+  SectionHeading,
+  Subheading as SubheadingBase,
+} from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 
-const PrimaryBackgroundContainer = tw(Container)`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw(
+  Container
+)`-mx-8 px-8 bg-primary-900 text-gray-100`;
 
 const HeadingContainer = tw.div``;
 const Subheading = tw(SubheadingBase)`text-center text-gray-100 mb-4`;
@@ -29,46 +34,45 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 
 export default ({
   subheading = "",
-  heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "Sıkca Sorulan Sorular",
+  description = "",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "Qr Menu seçiminde tasarım ne kadar önemli ?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "Restoranınıza gelen insanlar farklı teknolojik bilgilere sahiptir. Bu nedenle müşterilerinizin çok kolay bir şekilde kullanabileceği bir dijital menü sunmalısınız. Violida e-menü benzersiz dikey kategori sistemi ile Türkiye’nin en çok kullanılan dijital menüsüdür.",
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Nasıl çalışır ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Uygulama indirmeden ve 0.4 saniyede; Müşteri telefonunun kamerasını açar, Masadaki QR kodu okutur, Menüyü kendi telefonlarından inceler",
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Qr Kod tasarımını nasıl oluşturabilirim?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "İşletmenize özel karekod tasarımını 24 saat içinde size iletmiş olacağız. Dilediğiniz şekilde baskı alıp kullanabilirsiniz.",
     },
     {
-      question: "Where can I reach you for support ?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      question: "Menu fiyatlarını değiştirebilir miyim ?",
+      answer: "Evet, ister cepten ister bilgisayardan saniyeler içinde.",
     },
     {
-      question: "What kind of SLA Guarantee do you provide ? ",
+      question: "Görsel Ekleyebilir miyim?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Evet, saniyeler içinde. İster daha önce çekilen görseli, isterseniz kameranızı açın ve anında çekip yükleyin.",
     },
     {
-      question: "Where are the servers located ?",
+      question: "Telefonunuz Qr kodu okumuyorsa ne yapmalısınız ? ",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    }
-  ]
+        "Genellikle Android işletim sistemine sahip telefonlarda kamera QR kod okumayabiliyor. Bu tamamen telefonun özelliği ile ilgilidir. Ama mutlaka telefonunuzun ayarlar bölümünden kameranız için QR kod okuma özelliğinin olup olmadığından ve varsa açık olduğundan emin olun. Bu özellik yok ise zorunlu olarak Google Play’den güvenli bir QR kod okuyucu indirmelisiniz.",
+    },
+  ],
 }) => {
   const faqCol1 = [];
   const faqCol2 = [];
   const [activeQuestionIndex, setActiveQuestionIndex] = useState(null);
 
-  const toggleQuestion = questionIndex => {
+  const toggleQuestion = (questionIndex) => {
     if (activeQuestionIndex === questionIndex) setActiveQuestionIndex(null);
     else setActiveQuestionIndex(questionIndex);
   };
@@ -81,7 +85,7 @@ export default ({
           <QuestionToggleIcon
             variants={{
               collapsed: { rotate: 0 },
-              open: { rotate: -180 }
+              open: { rotate: -180 },
             }}
             initial="collapsed"
             animate={activeQuestionIndex === index ? "open" : "collapsed"}
@@ -92,8 +96,18 @@ export default ({
         </Question>
         <Answer
           variants={{
-            open: { opacity: 1, height: "auto", marginTop: "16px", display: "block" },
-            collapsed: { opacity: 0, height: 0, marginTop: "0px", display: "none" }
+            open: {
+              opacity: 1,
+              height: "auto",
+              marginTop: "16px",
+              display: "block",
+            },
+            collapsed: {
+              opacity: 0,
+              height: 0,
+              marginTop: "0px",
+              display: "none",
+            },
           }}
           initial="collapsed"
           animate={activeQuestionIndex === index ? "open" : "collapsed"}

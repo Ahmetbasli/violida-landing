@@ -16,7 +16,7 @@ import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import logoImageSrc from "images/violidaLogoo.png";
-import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import serverIllustrationImageSrc from "images/hero.avif";
 
 const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;
@@ -46,10 +46,12 @@ const Image = tw.img`w-144 ml-auto`;
 
 export default ({
   heading = "Menü oluşturmanın en kolay yolu",
-  description = "Violida'ın mobil sipariş ve hızlı ödeme özelliği, ortalama sipariş miktarını %20 artırır, masa başına 15 dakika kazandırır ve %40 daha fazla bahşiş almanızı sağlar.",
+  description = "Violida dijital menü ile satışlarınızı %30’a varan oranda arttırın ve operasyonlarınızı hızlandırın.",
   primaryButtonText = "15 Günlük Ücretsiz Deneme Sürümünüzü Başlatın",
-  primaryButtonUrl = "#",
+  primaryButtonUrl = "https://wa.me/905061158836",
   imageSrc = serverIllustrationImageSrc,
+  executeFeaturesScroll,
+  executePricingScroll,
 }) => {
   const logoLink = (
     <LogoLink href="/">
@@ -58,12 +60,16 @@ export default ({
     </LogoLink>
   );
   const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#">Features</NavLink>
-      <NavLink href="#">Pricing</NavLink>
-      {/* <NavLink href="#">Login</NavLink>
-      <PrimaryLink href="#">Signup</PrimaryLink> */}
-    </NavLinks>,
+    // <NavLinks key={1}>
+    //   {/* <NavLink onClick={executeFeaturesScroll} href="#">
+    //     Features
+    //   </NavLink>
+    //   <NavLink onClick={executePricingScroll} href="#">
+    //     Pricing
+    //   </NavLink> */}
+    //   {/* <NavLink href="#">Login</NavLink>
+    //   <PrimaryLink href="#">Signup</PrimaryLink> */}
+    // </NavLinks>,
   ];
   return (
     <PrimaryBackgroundContainer>

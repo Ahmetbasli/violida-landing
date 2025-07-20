@@ -81,24 +81,24 @@ export default ({
       imageSrc: HappyCustomer,
       title: "Mutlu Müşteriler",
       description:
-        "Müşterileriniz ürünlerinizi hazırlanmadan önce görerek daha kolay seçim yapar.",
+        "Canlı resimler ve açıklamalar ile müşterilerinizi mutlu edin.",
     },
     {
       imageSrc: LanguageIConImage,
       title: "Çoklu dil desteği",
-      description: "Menunuz farklı dillerdede gözüksün.",
+      description: "Menünüz farklı dillerdede gözüksün.",
     },
     {
       imageSrc: FastIconImage,
       title: "Hız",
       description:
-        "0.4 saniye menu açılış süresi müşterilerinizin ürünlerinizi görmesi anlık olarak sağlanır.",
+        "0.4 saniye açılış süresi ile menünüzü müşterilerinize hızlıca iletin.",
     },
     {
       imageSrc: CustomizeIconImage,
       title: "Özelleştirilebilir ",
       description:
-        "Menunuzde yaptığınız değişikleri gerçek zamanlı gördüğünüz  yönetim paneli desteği.",
+        "İşletme yönetim paneli ile menüde yaptığınız değişiklikleri gerçek zamanlı takip edin.",
     },
     {
       imageSrc: SupportIconImage,

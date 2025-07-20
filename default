@@ -35,3 +35,9 @@ location /backend/ {
 rewrite ^/backend(.*) $1 break;
 proxy_pass http://localhost:3001/backend/;
 }
+
+        location /home {
+                root /var/www;
+                index  index.html;
+                try_files $uri $uri/ /home/index.html;
+        }
