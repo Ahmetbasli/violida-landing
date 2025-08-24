@@ -26,10 +26,13 @@
   "homepage": ".",
   "scripts": {
     "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "yarn build && netlify deploy --prod --dir=build"
+  },
+  "resolutions": {
+    "@babel/core": "^7.16.0"
   },
   "eslintConfig": {
     "extends": "react-app",
@@ -55,5 +58,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0"
   }
 }

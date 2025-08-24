@@ -45,9 +45,9 @@ const PrimaryButton = tw(
 const Image = tw.img`w-144 ml-auto`;
 
 export default ({
-  heading = "Menü oluşturmanın en kolay yolu",
-  description = "Violida dijital menü ile satışlarınızı %30’a varan oranda arttırın ve operasyonlarınızı hızlandırın.",
-  primaryButtonText = "15 Günlük Ücretsiz Deneme Sürümünüzü Başlatın",
+  heading = "The easiest way to create a menu",
+  description = "Increase your sales by up to 30% and speed up your operations with Violida digital menu.",
+  primaryButtonText = "Start Your 15-Day Free Trial",
   primaryButtonUrl = "https://wa.me/905061158836",
   imageSrc = serverIllustrationImageSrc,
   executeFeaturesScroll,

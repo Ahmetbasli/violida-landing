@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.def877c0.chunk.css",
-    "main.js": "./static/js/main.e4b1a2b6.chunk.js",
-    "main.js.map": "./static/js/main.e4b1a2b6.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.735b4bfa.js",
-    "runtime-main.js.map": "./static/js/runtime-main.735b4bfa.js.map",
-    "static/css/2.df954f26.chunk.css": "./static/css/2.df954f26.chunk.css",
-    "static/js/2.d9f2e8d9.chunk.js": "./static/js/2.d9f2e8d9.chunk.js",
-    "static/js/2.d9f2e8d9.chunk.js.map": "./static/js/2.d9f2e8d9.chunk.js.map",
+    "main.css": "./static/css/main.c74555d0.chunk.css",
+    "main.js": "./static/js/main.bc549bef.chunk.js",
+    "main.js.map": "./static/js/main.bc549bef.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e097e5c3.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e097e5c3.js.map",
+    "static/css/2.a8aac159.chunk.css": "./static/css/2.a8aac159.chunk.css",
+    "static/js/2.0cc823b2.chunk.js": "./static/js/2.0cc823b2.chunk.js",
+    "static/js/2.0cc823b2.chunk.js.map": "./static/js/2.0cc823b2.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/2.df954f26.chunk.css.map": "./static/css/2.df954f26.chunk.css.map",
-    "static/css/main.def877c0.chunk.css.map": "./static/css/main.def877c0.chunk.css.map",
-    "static/js/2.d9f2e8d9.chunk.js.LICENSE.txt": "./static/js/2.d9f2e8d9.chunk.js.LICENSE.txt",
+    "static/css/2.a8aac159.chunk.css.map": "./static/css/2.a8aac159.chunk.css.map",
+    "static/css/main.c74555d0.chunk.css.map": "./static/css/main.c74555d0.chunk.css.map",
+    "static/js/2.0cc823b2.chunk.js.LICENSE.txt": "./static/js/2.0cc823b2.chunk.js.LICENSE.txt",
     "static/media/arrow-left-3-icon.d48c6bae.svg": "./static/media/arrow-left-3-icon.d48c6bae.svg",
     "static/media/arrow-right-3-icon.d415f77e.svg": "./static/media/arrow-right-3-icon.d415f77e.svg",
     "static/media/checkbox-circle.c832bc13.svg": "./static/media/checkbox-circle.c832bc13.svg",
@@ -39,10 +39,10 @@
     "static/media/youtube-icon.10cce4d9.svg": "./static/media/youtube-icon.10cce4d9.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.735b4bfa.js",
-    "static/css/2.df954f26.chunk.css",
-    "static/js/2.d9f2e8d9.chunk.js",
-    "static/css/main.def877c0.chunk.css",
-    "static/js/main.e4b1a2b6.chunk.js"
+    "static/js/runtime-main.e097e5c3.js",
+    "static/css/2.a8aac159.chunk.css",
+    "static/js/2.0cc823b2.chunk.js",
+    "static/css/main.c74555d0.chunk.css",
+    "static/js/main.bc549bef.chunk.js"
   ]
 }

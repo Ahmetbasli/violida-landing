@@ -58,7 +58,7 @@ const Card = styled.div`
 
 export default ({
   cards = null,
-  heading = "Özellikler",
+  heading = "Features",
   subheading = "",
   description = "",
 }) => {
@@ -73,37 +73,37 @@ export default ({
   const defaultCards = [
     {
       imageSrc: ProfitIconImage,
-      title: "Karlılığını Arttır",
+      title: "Increase Your Profitability",
       description:
-        "Kampanya özelliğini kullanarak müşterilerinizi satmak istediğiniz ürünlere yönlendirin.",
+        "Use the campaign feature to direct your customers to products you want to sell.",
     },
     {
       imageSrc: HappyCustomer,
-      title: "Mutlu Müşteriler",
+      title: "Happy Customers",
       description:
-        "Canlı resimler ve açıklamalar ile müşterilerinizi mutlu edin.",
+        "Make your customers happy with vivid images and descriptions.",
     },
     {
       imageSrc: LanguageIConImage,
-      title: "Çoklu dil desteği",
-      description: "Menünüz farklı dillerdede gözüksün.",
+      title: "Multi-language Support",
+      description: "Let your menu appear in different languages.",
     },
     {
       imageSrc: FastIconImage,
-      title: "Hız",
+      title: "Speed",
       description:
-        "0.4 saniye açılış süresi ile menünüzü müşterilerinize hızlıca iletin.",
+        "Deliver your menu to your customers quickly with a 0.4 second loading time.",
     },
     {
       imageSrc: CustomizeIconImage,
-      title: "Özelleştirilebilir ",
+      title: "Customizable",
       description:
-        "İşletme yönetim paneli ile menüde yaptığınız değişiklikleri gerçek zamanlı takip edin.",
+        "Track the changes you make to the menu in real time with the business management panel.",
     },
     {
       imageSrc: SupportIconImage,
-      title: "24/7 Destek",
-      description: "Destek ekibimiz 7/24 yardıma hazır.",
+      title: "24/7 Support",
+      description: "Our support team is ready to help 24/7.",
     },
   ];
 

@@ -56,7 +56,7 @@ const ControlButton = styled.button`
 
 export default ({
   subheading = "",
-  heading = "Referanslar",
+  heading = "Testimonials",
   description = "",
   testimonials = [
     {
@@ -65,7 +65,7 @@ export default ({
       imageSrc:
         "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.85&w=256&h=256&q=80",
       quote:
-        "Violida, kafemizin satışlarını arttırdı ve kahvaltı menümüzü sunmamıza yardımcı oldu. İstediğimiz zaman menümüzü Violida ile güncelliyoruz ve bu çok kolay!",
+        "Violida increased our cafe's sales and helped us present our breakfast menu. We update our menu with Violida whenever we want and it's so easy!",
     },
     {
       customerName: "Emre B.",
@@ -73,15 +73,15 @@ export default ({
       imageSrc:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=256&h=256&q=80",
       quote:
-        " QR menü, işletme yönetiminde işlerimizi kolaylaştıran, çözüm üreten yol arkadaşımız, çözüm ortağımız..",
+        "QR menu is our companion and solution partner that facilitates our work in business management and produces solutions.",
     },
     {
       customerName: "Sercan C.",
-      customerProfile: "Müdür, Mum's Cafe",
+      customerProfile: "Manager, Mum's Cafe",
       imageSrc:
         "https://images.unsplash.com/photo-1580852300654-03c803a14e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4.25&w=256&h=256&q=80",
       quote:
-        "Pratik, hızlı ve düşük maliyetli bir sistem olan karekod menü ile yönetimdeki tüm ihtiyaçlarımızı karşılıyoruz.",
+        "We meet all our management needs with the QR code menu, which is a practical, fast and low-cost system.",
     },
   ],
 }) => {

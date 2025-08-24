@@ -34,37 +34,37 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 
 export default ({
   subheading = "",
-  heading = "Sıkca Sorulan Sorular",
+  heading = "Frequently Asked Questions",
   description = "",
   faqs = [
     {
-      question: "Qr Menu seçiminde tasarım ne kadar önemli ?",
+      question: "How important is design when choosing a QR Menu?",
       answer:
-        "Restoranınıza gelen insanlar farklı teknolojik bilgilere sahiptir. Bu nedenle müşterilerinizin çok kolay bir şekilde kullanabileceği bir dijital menü sunmalısınız. Violida e-menü benzersiz dikey kategori sistemi ile Türkiye’nin en çok kullanılan dijital menüsüdür.",
+        "People coming to your restaurant have different technological knowledge. Therefore, you should offer a digital menu that your customers can use very easily. Violida e-menu is Turkey's most used digital menu with its unique vertical category system.",
     },
     {
-      question: "Nasıl çalışır ?",
+      question: "How does it work?",
       answer:
-        "Uygulama indirmeden ve 0.4 saniyede; Müşteri telefonunun kamerasını açar, Masadaki QR kodu okutur, Menüyü kendi telefonlarından inceler",
+        "Without downloading an app and in 0.4 seconds; Customer opens their phone camera, Scans the QR code on the table, Reviews the menu from their own phones",
     },
     {
-      question: "Qr Kod tasarımını nasıl oluşturabilirim?",
+      question: "How can I create a QR Code design?",
       answer:
-        "İşletmenize özel karekod tasarımını 24 saat içinde size iletmiş olacağız. Dilediğiniz şekilde baskı alıp kullanabilirsiniz.",
+        "We will deliver the custom QR code design for your business within 24 hours. You can print and use it as you wish.",
     },
     {
-      question: "Menu fiyatlarını değiştirebilir miyim ?",
-      answer: "Evet, ister cepten ister bilgisayardan saniyeler içinde.",
+      question: "Can I change menu prices?",
+      answer: "Yes, either from your phone or computer within seconds.",
     },
     {
-      question: "Görsel Ekleyebilir miyim?",
+      question: "Can I add images?",
       answer:
-        "Evet, saniyeler içinde. İster daha önce çekilen görseli, isterseniz kameranızı açın ve anında çekip yükleyin.",
+        "Yes, within seconds. Either use a previously taken image, or open your camera and instantly take and upload.",
     },
     {
-      question: "Telefonunuz Qr kodu okumuyorsa ne yapmalısınız ? ",
+      question: "What should you do if your phone doesn't read QR codes?",
       answer:
-        "Genellikle Android işletim sistemine sahip telefonlarda kamera QR kod okumayabiliyor. Bu tamamen telefonun özelliği ile ilgilidir. Ama mutlaka telefonunuzun ayarlar bölümünden kameranız için QR kod okuma özelliğinin olup olmadığından ve varsa açık olduğundan emin olun. Bu özellik yok ise zorunlu olarak Google Play’den güvenli bir QR kod okuyucu indirmelisiniz.",
+        "Generally, cameras on phones with Android operating system may not read QR codes. This is completely related to the phone's features. But make sure from your phone's settings section whether your camera has QR code reading feature and if so, make sure it's turned on. If this feature doesn't exist, you must download a secure QR code reader from Google Play.",
     },
   ],
 }) => {
